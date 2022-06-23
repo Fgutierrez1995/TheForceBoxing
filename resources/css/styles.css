@@ -1,0 +1,275 @@
+/* Universal Styles */
+
+/* latin */
+@font-face {
+  font-family: 'Lexend Mega';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexendmega/v23/qFdX35aBi5JtHD41zSTFEuTByuvYFuE9IbDL8fmfuuaj.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: #cdcbbf;
+
+}
+
+body {
+    margin: 0;
+    font-family: "Lexend Mega", sans-serif;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Header/Navbar Section */
+
+h1 {
+  text-align: center;
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10%;
+    border: 5px solid black;
+    background-color: #f57d40;
+}
+
+.navbar p {
+    display: inline-flex;
+    flex-shrink: 1;
+    padding: 10px 10px;
+}
+
+.navbar p:hover {
+  font-size: 150%;
+}
+
+a{
+  color:black;
+}
+
+/* Main Section */
+.main{
+  padding-top: 4rem;
+}
+
+/* Schedule Section */
+
+.mobile-only{
+  display: none;
+}
+
+.schedule-img{
+  display: flex;
+  height: 400px;
+  opacity: 0.9;
+  background-image: url("file:///C:/Users/19032/Documents/CodeAcademy/CompanyHomePage/resources/images/schedulebackground.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#schedule table{
+  position: relative;
+  top: 4rem;
+  background-color: black;
+  color: white;
+
+
+}
+
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 2px white ;
+}
+
+td{
+  border: 1px solid white;
+}
+
+caption{
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  bottom: 20px;
+}
+
+/* About Us Section */
+
+#about {
+  display: flex;
+  min-height:31.25rem;
+  margin: auto;
+  background: #E3E1D3;
+}
+
+.content img{
+  display: inline-flex;
+  border-radius: 50%;
+  height: 300px;
+  width: auto;
+}
+
+.content p {
+  padding: 0 10%;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+/* Photo section */
+#photos {
+}
+
+#photos h2 {
+  padding-top: 2rem;
+}
+
+.photo-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height:31.25rem;
+}
+
+.photo-img img{
+  display: inline-flex;
+  flex-shrink: 1;
+}
+
+.photo-img img{
+  max-height: 25rem;
+  max-width: 25rem;
+  height: 25rem;
+  width: 25rem;
+}
+
+/* Contact Section */
+#contact{
+  position: relative;
+  top: 2.5rem;
+  bottom: 2.5rem;
+  background-color: #E3733B;
+  opacity: 0.9;
+}
+
+#contact a{
+  text-decoration: none;
+}
+
+#contact a:hover {
+  font-size: 150%;
+}
+
+
+
+/* Display Options Desktop, Tablet, Mobile */
+
+/* Mobile */
+@media only screen and (max-width:320px){
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar p {
+    font-size: 1rem;
+  }
+
+  .navbar p:hover {
+    font-size: 1rem;
+  }
+
+  .schedule-img{
+    background-image: none;
+  }
+
+  table{
+    display: none;
+  }
+
+  .mobile-only{
+    display: inline-block;
+    font-size: 1rem;
+    text-align: left;
+    height: auto;
+  }
+
+  .photo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .photo-img img{
+    height: auto;
+    max-width: 320px;
+    width: auto;
+    padding: 10px;
+  }
+
+  #contact{
+    font-size: 1rem;
+  }
+
+  #contact a:hover {
+    font-size: 1rem;
+  }
+
+}
+
+/* Tablet */
+@media only screen and (min-width:321px) and (max-width:768px){
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar p {
+    font-size: 1.375rem;
+  }
+
+  .navbar p:hover {
+    font-size: 1.375rem;
+  }
+
+  table{
+    font-size: 0.9rem;
+  }
+
+  .photo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .photo-img img{
+    height: auto;
+    max-width: 320px;
+    width: auto;
+    padding: 10px;
+  }
+
+  #contact{
+    font-size: 1.375rem;
+  }
+
+  #contact a:hover {
+    font-size: 1.375rem;
+  }
+
+}
