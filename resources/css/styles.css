@@ -71,7 +71,7 @@ a{
   display: flex;
   height: 400px;
   opacity: 0.9;
-  background-image: url("resources/images/schedulebackground.jpg");
+  background-image: url("../images/schedulebackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
