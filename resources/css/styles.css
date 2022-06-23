@@ -176,7 +176,6 @@ caption{
 }
 
 
-
 /* Display Options Desktop, Tablet, Mobile */
 
 /* Mobile */
@@ -246,9 +245,22 @@ caption{
     font-size: 1.375rem;
   }
 
-  table{
-    font-size: 0.9rem;
+  .schedule-img{
+    height: 100%;
   }
+
+  .mobile-only{
+    display: inline-block;
+    font-size: 0.8rem;
+    text-align: left;
+    height: auto;
+    color: white;
+  }
+
+  table{
+    display: none;
+  }
+
 
   .photo-img {
     display: flex;
@@ -262,6 +274,30 @@ caption{
     max-width: 320px;
     width: auto;
     padding: 10px;
+  }
+
+  #contact{
+    font-size: 1.375rem;
+  }
+
+  #contact a:hover {
+    font-size: 1.375rem;
+  }
+
+}
+
+/*Desktop*/
+@media only screen and (min-width:769px) and (max-width:1200px) {
+  .navbar p {
+    font-size: 1.375rem;
+  }
+
+  .navbar p:hover {
+    font-size: 1.375rem;
+  }
+
+  table {
+    font-size: 0.8rem;
   }
 
   #contact{
