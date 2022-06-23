@@ -307,5 +307,19 @@ caption{
   #contact a:hover {
     font-size: 1.375rem;
   }
+  
+    .photo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .photo-img img{
+    height: auto;
+    max-width: 320px;
+    width: auto;
+    padding: 10px;
+  }
 
 }
